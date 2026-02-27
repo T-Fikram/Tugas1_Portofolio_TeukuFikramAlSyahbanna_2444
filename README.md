@@ -1,0 +1,1 @@
+# Tugas1_Portofolio_TeukuFikramAlSyahbanna_2444
