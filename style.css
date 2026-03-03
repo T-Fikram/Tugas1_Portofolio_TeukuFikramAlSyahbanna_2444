@@ -159,6 +159,20 @@ html {
 	font-weight: 500;
 	color: whitesmoke;
 }
+
+.hero .hero-info .hero-name {
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: white;
+	margin-bottom: 0px;
+}
+
+.hero .hero-info .hero-npm {
+	font-size: 1.2rem;
+	color: #bbbbbb;
+	letter-spacing: 1px;
+	margin-bottom: 0px;
+}
 .hero .hero-info .hero-info-subheading {
 	font-size: 1.6rem;
 	text-transform: uppercase;
@@ -166,7 +180,7 @@ html {
 	color: whitesmoke;
 }
 .hero .hero-info .hero-info-button {
-	margin-top: 30px;
+	margin-top: 10px;
 	padding: 2rem 5rem;
 	display: inline-block;
 	font-size: 1.6rem;
