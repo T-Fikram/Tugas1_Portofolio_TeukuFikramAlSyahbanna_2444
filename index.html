@@ -3,148 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <title>Portfolio - Teuku Fikram</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- nav-bar  -->
-  <section id="nav-bar" class="container">
-    <header class="nav-bar">
-      <div class="brand"><a href="#hero"><h1></h1></a></div>
-      <div class="nav-list">
-        <div class="hamburger">
-          <div class="bar"></div>
-        </div>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Channel</a></li>
-          <li><a href="#hire">Subscribe</a></li>
+
+  <!-- ===================== NAVBAR (Bootstrap) ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#hero">TF</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Channel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hire">Subscribe</a></li>
         </ul>
       </div>
-    </header>
-  </section>
-  <!-- End nav-bar  -->
-
-  <!-- Hero Section  -->
-  <section id="hero" class="hero container">
-    <div class="hero-info">
-        <h2 class="hero-name">Teuku Fikram Al Syahbanna</h2>
-        <p class="hero-npm">NPM: 2408107010044</p>
-
-        <h1 class="hero-info-heading">
-            Keep Learning<br>Always Sharing
-        </h1>
-
-        <a href="portfolio.html" type="button" class="hero-info-button">Portfolio</a>
     </div>
-    <div class="hero-img">
-      <img src="./images/img-1.jpeg" alt="">
+  </nav>
+  <!-- ===================== END NAVBAR ===================== -->
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100 pt-5">
+        <!-- Text Col -->
+        <div class="col-md-6 hero-text">
+          <h2 class="hero-name">Teuku Fikram Al Syahbanna</h2>
+          <p class="hero-npm">
+            <span class="badge bg-secondary">NPM: 2408107010044</span>
+          </p>
+          <h1 class="hero-heading">Keep Learning<br>Always Sharing</h1>
+          <a href="portfolio.html" class="btn btn-outline-light btn-lg mt-3 px-4">Portfolio</a>
+        </div>
+        <!-- Image Col -->
+        <div class="col-md-5 offset-md-1 text-center mt-5 mt-md-0">
+          <img src="./images/img-1.jpeg" alt="Foto Teuku Fikram" class="hero-img img-fluid rounded">
+        </div>
+      </div>
     </div>
   </section>
-  <!-- End Hero Section  -->
+  <!-- ===================== END HERO SECTION ===================== -->
 
-  <!-- About section  -->
-  <section id="about" class="about container">
-    <div class="about-info">
-      <h1 class="about-info-heading">About Me</h1>
-      <p class="about-info-desc">I am an Informatics student at Universitas Syiah Kuala and a content creator who shares meaningful stories about technology and digital culture. I focus on making ideas simple and relatable, especially for young audiences, while exploring how technology shapes everyday life.</p>
-      <a href="file/CV Teuku Fikram Al Syahbanna.pdf" download class="about-info-button">
-        Download CV
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="about-section py-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <!-- Text -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-heading">About Me</h2>
+          <p class="section-desc mt-3">
+            I am an Informatics student at Universitas Syiah Kuala and a content creator who shares meaningful
+            stories about technology and digital culture. I focus on making ideas simple and relatable,
+            especially for young audiences, while exploring how technology shapes everyday life.
+          </p>
+          <a href="file/CV Teuku Fikram Al Syahbanna.pdf" download class="btn btn-dark mt-3">
+            <i class="fas fa-download me-2"></i>Download CV
+          </a>
+        </div>
+        <!-- Image -->
+        <div class="col-lg-6 text-center">
+          <img src="./images/img-2.png" alt="Logo USK" class="about-img img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== END ABOUT SECTION ===================== -->
+
+  <!-- ===================== SERVICES / CHANNEL SECTION ===================== -->
+  <section id="services" class="services-section py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">My Channel</h2>
+        <p class="section-desc mx-auto" style="max-width:600px;">
+          I currently manage three YouTube channels as platforms to share my thoughts, stories,
+          and educational content about technology and digital culture.
+        </p>
+      </div>
+
+      <!-- Bootstrap Cards (3 kolom) -->
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm channel-card">
+            <div class="card-body text-center p-4">
+              <i class="fa fa-palette fa-3x mb-3 card-icon"></i>
+              <h5 class="card-title">Bang Fikram Official</h5>
+              <p class="card-text">
+                Bang Fikram Official is my personal YouTube channel where I began experimenting
+                with content creation during my early years. It reflects a phase of exploration,
+                creativity, and trial error as I discovered my interests and style.
+              </p>
+            </div>
+            <div class="card-footer text-muted text-center small">
+              <i class="fab fa-youtube me-1"></i> Personal Channel
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm channel-card featured-card">
+            <div class="card-body text-center p-4">
+              <i class="fa fa-laptop-code fa-3x mb-3 card-icon"></i>
+              <h5 class="card-title">Fiklogi</h5>
+              <p class="card-text">
+                Fiklogi is my active YouTube channel focused on digital culture and contemporary
+                technology issues. Through this platform, I explore how digital systems, platforms,
+                and algorithms influence human behavior and everyday life.
+              </p>
+            </div>
+            <div class="card-footer text-center small">
+              <span class="badge bg-dark"><i class="fab fa-youtube me-1"></i> Active Channel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm channel-card">
+            <div class="card-body text-center p-4">
+              <i class="fa fa-building fa-3x mb-3 card-icon"></i>
+              <h5 class="card-title">Fikiron</h5>
+              <p class="card-text">
+                Fikiron is an educational YouTube channel that discusses social issues and
+                everyday phenomena. Through this platform, I aim to present thought-provoking
+                topics in a simple and engaging way for young audiences.
+              </p>
+            </div>
+            <div class="card-footer text-muted text-center small">
+              <i class="fab fa-youtube me-1"></i> Educational Channel
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===================== END SERVICES SECTION ===================== -->
+
+  <!-- ===================== SUBSCRIBE / HIRE SECTION ===================== -->
+  <section id="hire" class="hire-section py-5">
+    <div class="container text-center py-3">
+
+      <!-- Bootstrap Alert sebagai info banner -->
+      <div class="alert alert-dark d-inline-block mb-4" role="alert">
+        <i class="fab fa-youtube me-2"></i>
+        New videos every week on digital culture and technology!
+      </div>
+
+      <h2 class="hire-heading mb-4">Wanna Join Us?</h2>
+      <a href="https://youtube.com/@fiklogi?si=BTPakWJ-9vO6Lhai"
+        target="_blank" rel="noopener noreferrer"
+        class="btn btn-dark btn-lg px-5">
+        <i class="fab fa-youtube me-2"></i>Subscribe!
       </a>
     </div>
-    <div class="about-img">
-      <div class="about-img-wrapper">
-        <img src="./images/img-2.png" alt="">
-      </div>
-    </div>
   </section>
-  <!-- End About section  -->
+  <!-- ===================== END SUBSCRIBE SECTION ===================== -->
 
-  <!-- Service Section  -->
-  <section id="services" class="services container">
-    <div class="services-header">
-      <h1 class="services-header-heading">My Channel</h1>
-      <p class="services-header-desc">I currently manage three YouTube channels as platforms to share my thoughts, stories, and educational content about technology and digital culture.</p>
-    </div>
-    <div class="services-info">
-      <div class="service">
-        <div class="service-card">
-          <div class="service-front">
-            <i class="fa fa-palette"></i>
-            <h1 class="service-front-heading">Bang Fikram Official</h1>
-          </div>
-          <div class="service-back">
-            <h1 class="service-back-heading">Bang Fikram Official</h1>
-            <p class="service-back-desc">Bang Fikram Official is my personal YouTube channel where I began experimenting with content creation during my early years. It reflects a phase of exploration, creativity, and trial error as I discovered my interests and style. The channel represents the starting point of my journey in the digital world.</p>
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer" class="footer-section py-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+
+        <!-- Contact -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-heading">Contact With Me</h5>
+          <p class="footer-info mb-1">
+            <i class="fas fa-envelope me-2"></i>teukufikramalsyahbanna@gmail.com
+          </p>
+          <p class="footer-info">
+            <i class="fas fa-phone me-2"></i>+6282161804161
+          </p>
+        </div>
+
+        <!-- Social -->
+        <div class="col-md-6 text-md-end">
+          <h5 class="footer-heading">Follow Me</h5>
+          <div class="social-icons mt-2">
+            <a href="https://github.com/T-Fikram" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/teuku.fikram?igsh=Z3ZjczR0bzkza204" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="https://youtube.com/@fiklogi?si=BTPakWJ-9vO6Lhai" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-youtube-square"></i>
+            </a>
           </div>
         </div>
-      </div>
-      <div class="service">
-        <div class="service-card">
-          <div class="service-front">
-            <i class="fa fa-laptop-code"></i>
-            <h1 class="service-front-heading">Fiklogi</h1>
-          </div>
-          <div class="service-back">
-            <h1 class="service-back-heading">Fiklogi</h1>
-            <p class="service-back-desc">Fiklogi is my active YouTube channel focused on digital culture and contemporary technology issues. Through this platform, I explore how digital systems, platforms, and algorithms influence human behavior and everyday life. The channel is designed to make technology discussions more relevant and accessible for young audiences.</p>
-          </div>
-        </div>
-      </div>
-      <div class="service">
-        <div class="service-card">
-          <div class="service-front">
-            <i class="fa fa-building"></i>
-            <h1 class="service-front-heading">Fikiron</h1>
-          </div>
-          <div class="service-back">
-            <h1 class="service-back-heading">Fikiron</h1>
-            <p class="service-back-desc">Fikiron is an educational YouTube channel that discusses social issues and everyday phenomena. Through this platform, I aim to present thought provoking topics in a simple and engaging way. The channel encourages young audiences to think critically about the world around them.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section  -->
 
-  <!-- Hire Section  -->
-  <section id="hire" class="hire container">
-    <h1 class="hire-heading">Wanna Join US?</h1>
-<a href="https://youtube.com/@fiklogi?si=BTPakWJ-9vO6Lhai" 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   class="hire-button">
-   Subscribe!
-</a>
-  </section>
-  <!-- End Hire Section  -->
-
-  <!-- Footer section  -->
-  <footer id="footer" class="footer container">
-    <div class="footer-contact">
-      <h1 class="footer-contact-heading">Contact With Me</h1>
-      <p class="footer-contact-info">Email: teukufikramalsyahbanna@gmail.com</p>
-      <p class="footer-contact-info">Mobile: +6282161804161</p>
-    </div>
-    <div class="footer-social-follow">
-      <h1 class="footer-social-follow-heading">Follow Me</h1>
-      <div class="footer-social-icon">
-        <div class="footer-social-icon">
-        <a href="https://github.com/T-Fikram" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/teuku.fikram?igsh=Z3ZjczR0bzkza204" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-instagram-square"></i>
-        </a>
-        <a href="https://youtube.com/@fiklogi?si=BTPakWJ-9vO6Lhai" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-youtube-square"></i>
-        </a>
       </div>
-      </div>
+      <hr class="border-secondary mt-4">
+      <p class="text-center footer-copy mb-0">&copy; 2026 Teuku Fikram Al Syahbanna. All rights reserved.</p>
     </div>
   </footer>
-  <!-- End Footer section -->
-  <script src="./app.js"></script>
+  <!-- ===================== END FOOTER ===================== -->
+
+  <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -4,141 +4,267 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - Teuku Fikram</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- nav-bar (matching index.html) -->
-  <section id="nav-bar" class="container">
-    <header class="nav-bar">
-      <div class="brand"><a href="index.html"><h1></h1></a></div>
-      <div class="nav-list">
-        <div class="hamburger">
-          <div class="bar"></div>
+  <!-- ===================== NAVBAR (Bootstrap) ===================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">TF</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav"
+        aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="portfolioNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ===================== END NAVBAR ===================== -->
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100 pt-5">
+        <div class="col-md-6 hero-text">
+          <h2 class="hero-name">Teuku Fikram Al Syahbanna</h2>
+          <p class="hero-npm">
+            <span class="badge bg-secondary">NPM: 2408107010044</span>
+          </p>
+          <h1 class="hero-heading">Portfolio</h1>
+          <a href="#personal" class="btn btn-outline-light btn-lg mt-3 px-4">See My Work</a>
         </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </header>
-  </section>
-
-  <!-- Hero / Profile -->
-  <section id="hero" class="hero container">
-    <div class="hero-info">
-      <h2 class="hero-name">Teuku Fikram Al Syahbanna</h2>
-      <p class="hero-npm">NPM: 2408107010044</p>
-
-      <h1 class="hero-info-heading">
-        Portfolio
-      </h1>
-
-      <a href="#personal" class="hero-info-button">See my work</a>
-    </div>
-
-    <div class="hero-img">
-      <img src="./images/img-1.jpeg" alt="Profile photo of Teuku Fikram" />
-    </div>
-  </section>
-
-  <!-- Personal Data (table) -->
-  <section id="personal" class="about container">
-    <div class="about-info">
-      <h1 class="about-info-heading">Personal Data</h1>
-      <p class="about-info-desc">An Informatics student who explores the intersection of technology, digital culture, and human behavior while building meaningful content for young audiences.</p>
-    </div>
-
-    <div class="about-img">
-      <div class="about-img-wrapper">
-        <!-- optional second image; keep if you have img-2 -->
-        <img src="./images/img-2.png" alt="Secondary image" />
-      </div>
-    </div>
-
-    <div style="width:100%; display:flex; justify-content:center; margin-top:2rem;">
-      <table border="1" cellpadding="10" style="max-width:900px; width:90%; background:white;">
-        <tr>
-          <th style="text-align:left; width:35%;">Field</th>
-          <th style="text-align:left;">Detail</th>
-        </tr>
-        <tr>
-          <td>Name</td>
-          <td>Teuku Fikram Al Syahbanna</td>
-        </tr>
-        <tr>
-          <td>NPM</td>
-          <td>2408107010044</td>
-        </tr>
-        <tr>
-          <td>Major</td>
-          <td>Informatics, FMIPA - Universitas Syiah Kuala</td>
-        </tr>
-        <tr>
-          <td>Role</td>
-          <td>Content Creator • Educator (digital culture)</td>
-        </tr>
-      </table>
-    </div>
-  </section>
-
-  <!-- Channels (list) -->
-  <section id="projects" class="services container" style="padding-top:3rem;">
-    <div class="services-header">
-      <h1 class="services-header-heading">Channels & Highlights</h1>
-      <p class="services-header-desc">Three active/previous channels where I create and experiment with digital content.</p>
-    </div>
-
-    <div class="services-info" style="margin-top:2rem;">
-      <div style="max-width:900px; width:90%; background:white; padding:2rem; border-radius:8px;">
-        <h2 style="color:#111827; margin-bottom:1rem;">YouTube Channels</h2>
-        <ul style="font-size:1.6rem; line-height:2.2rem; color:#333;">
-          <li><strong>Bang Fikram Official</strong> - Personal channel from early experiments in content creation.</li>
-          <li><strong>Fiklogi</strong> - Active channel about digital culture, platforms, and technology issues.</li>
-          <li><strong>Fikiron</strong> - Educational videos on social phenomena and everyday topics.</li>
-        </ul>
-
-        <h3 style="margin-top:1.8rem; color:#111827;">Selected highlights</h3>
-        <ul style="font-size:1.5rem; margin-top:0.6rem; color:#333;">
-          <li>Short explainers on digital psychology and algorithm effects</li>
-          <li>Mini-documentaries on everyday technology behaviors</li>
-          <li>Organization leadership and event coverage</li>
-        </ul>
+        <div class="col-md-5 offset-md-1 text-center mt-5 mt-md-0">
+          <img src="./images/img-1.jpeg" alt="Foto Teuku Fikram" class="hero-img img-fluid rounded">
+        </div>
       </div>
     </div>
   </section>
+  <!-- ===================== END HERO ===================== -->
 
-  <!-- Contact / CTA -->
-  <section id="contact" class="hire container" style="margin-top:2rem;">
-    <h1 class="hire-heading">Contact</h1>
-    <a href="mailto:teukufikramalsyahbanna@gmail.com" class="hire-button">Email me</a>
-  </section>
+  <!-- ===================== PERSONAL DATA (Bootstrap Table) ===================== -->
+  <section id="personal" class="about-section py-5">
+    <div class="container py-4">
+      <h2 class="section-heading text-center mb-2">Personal Data</h2>
+      <p class="section-desc text-center mb-4">
+        An Informatics student who explores the intersection of technology, digital culture,
+        and human behavior while building meaningful content for young audiences.
+      </p>
 
-  <!-- Footer (matching index) -->
-  <footer id="footer" class="footer container">
-    <div class="footer-contact">
-      <h1 class="footer-contact-heading">Contact With Me</h1>
-      <p class="footer-contact-info">Email: teukufikramalsyahbanna@gmail.com</p>
-      <p class="footer-contact-info">Mobile: +6282161804161</p>
-    </div>
-    <div class="footer-social-follow">
-      <h1 class="footer-social-follow-heading">Follow Me</h1>
-      <div class="footer-social-icon">
-<a href="https://github.com/T-Fikram" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/teuku.fikram?igsh=Z3ZjczR0bzkza204" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-instagram-square"></i>
-        </a>
-        <a href="https://youtube.com/@fiklogi?si=BTPakWJ-9vO6Lhai" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-youtube-square"></i>
-        </a>
+      <!-- Bootstrap Table: table-bordered, table-hover, table-striped -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <table class="table table-bordered table-hover table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col" style="width:35%">Field</th>
+                <th scope="col">Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Name</strong></td>
+                <td>Teuku Fikram Al Syahbanna</td>
+              </tr>
+              <tr>
+                <td><strong>NPM</strong></td>
+                <td>
+                  <span class="badge bg-secondary">2408107010044</span>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Major</strong></td>
+                <td>Informatics, FMIPA - Universitas Syiah Kuala</td>
+              </tr>
+              <tr>
+                <td><strong>Role</strong></td>
+                <td>
+                  <span class="badge bg-dark me-1">Content Creator</span>
+                  <span class="badge bg-secondary">Educator (Digital Culture)</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
+    </div>
+  </section>
+  <!-- ===================== END PERSONAL DATA ===================== -->
+
+  <!-- ===================== CHANNELS (List Group + Accordion) ===================== -->
+  <section id="projects" class="services-section py-5">
+    <div class="container py-4">
+      <h2 class="section-heading text-center mb-2">Channels &amp; Highlights</h2>
+      <p class="section-desc text-center mb-5">
+        Three active/previous channels where I create and experiment with digital content.
+      </p>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Bootstrap List Group: daftar channel -->
+        <div class="col-lg-5">
+          <h5 class="mb-3 fw-semibold"><i class="fab fa-youtube me-2 text-danger"></i>YouTube Channels</h5>
+          <ul class="list-group list-group-flush channel-list">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Bang Fikram Official
+              <span class="badge bg-secondary">Personal</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Fiklogi
+              <span class="badge bg-dark">Active</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Fikiron
+              <span class="badge bg-secondary">Educational</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bootstrap Accordion: highlights per channel -->
+        <div class="col-lg-7">
+          <h5 class="mb-3 fw-semibold"><i class="fas fa-list-ul me-2"></i>Channel Highlights</h5>
+          <div class="accordion" id="highlightAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Bang Fikram Official
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="headingOne" data-bs-parent="#highlightAccordion">
+                <div class="accordion-body">
+                  My earliest channel where I explored vlogging, personal storytelling, and early experiments
+                  with video editing. It marked the beginning of my journey into content creation.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Fiklogi
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="headingTwo" data-bs-parent="#highlightAccordion">
+                <div class="accordion-body">
+                  Short explainers on digital psychology and algorithm effects, mini-documentaries on
+                  everyday technology behaviors, and engaging discussions about how platforms shape society.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Fikiron
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="headingThree" data-bs-parent="#highlightAccordion">
+                <div class="accordion-body">
+                  Videos on social phenomena, everyday topics explained simply, and content that encourages
+                  young audiences to think critically about the world around them.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ===================== END CHANNELS ===================== -->
+
+  <!-- ===================== CONTACT FORM (Bootstrap Form) ===================== -->
+  <section id="contact" class="hire-section py-5">
+    <div class="container py-3">
+      <h2 class="hire-heading text-center mb-4">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+
+          <!-- Bootstrap Form -->
+          <div class="contact-form-wrapper p-4 rounded">
+            <div class="mb-3">
+              <label for="contactName" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="contactName" placeholder="e.g. John Doe">
+            </div>
+            <div class="mb-3">
+              <label for="contactEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="contactMessage" class="form-label">Message</label>
+              <textarea class="form-control" id="contactMessage" rows="4"
+                placeholder="Write your message here..."></textarea>
+            </div>
+            <div class="d-grid">
+              <a href="mailto:teukufikramalsyahbanna@gmail.com" class="btn btn-dark btn-lg">
+                <i class="fas fa-paper-plane me-2"></i>Send Message
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===================== END CONTACT ===================== -->
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer" class="footer-section py-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-heading">Contact With Me</h5>
+          <p class="footer-info mb-1">
+            <i class="fas fa-envelope me-2"></i>teukufikramalsyahbanna@gmail.com
+          </p>
+          <p class="footer-info">
+            <i class="fas fa-phone me-2"></i>+6282161804161
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5 class="footer-heading">Follow Me</h5>
+          <div class="social-icons mt-2">
+            <a href="https://github.com/T-Fikram" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/teuku.fikram?igsh=Z3ZjczR0bzkza204" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="https://youtube.com/@fiklogi?si=BTPakWJ-9vO6Lhai" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4">
+      <p class="text-center footer-copy mb-0">&copy; 2025 Teuku Fikram Al Syahbanna. All rights reserved.</p>
     </div>
   </footer>
+  <!-- ===================== END FOOTER ===================== -->
 
-  <script src="./app.js"></script>
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
